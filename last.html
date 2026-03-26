@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>VORTEX MOTORS - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+
+    <style>
+    .whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .whatsapp img {
+        width: 60px;
+        height: 60px;
+        transition: transform 0.3s;
+    }
+
+    .whatsapp img:hover {
+        transform: scale(1.1);
+    }
+
+    .banner {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 60px;
+        align-items: flex-start;
+    }
+
+    .banner h1 {
+        font-size: clamp(28px, 5vw, 50px);
+        color: #3fa9ff;
+    }
+
+    .banner p {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .botao {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #3fa9ff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: 0.6s;
+    }
+
+    .botao:hover {
+        background: #1a7acc;
+    }
+    </style>
+</head>
+
+<body>
+    <iframe src="/components/navbs.html" frameborder="0" width="100%" height="auto"></iframe>
+
+    <section class="banner">
+        <h1>O FUTURO CHEGOU</h1>
+        <p>CARROS ELÉTRICOS.</p>
+        <a href="/navbar/servicos.html" class="botao">Ver Serviços</a>
+    </section>
+
+    <a href="https://wa.me/5511984039699" class="whatsapp" target="_blank">
+        <img src="img/whatsapp.png" alt="WhatsApp"/>
+    </a>
+
+</body>
+
+</html>
