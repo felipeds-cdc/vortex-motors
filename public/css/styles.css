@@ -381,74 +381,78 @@ a:hover {
 /* =====================================================
    10. FORMULÁRIOS
    ===================================================== */
+
 .form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--spacing-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
 }
 
-.form__input,
-.form__textarea,
-.form__select {
-  width: 300px;
-  padding: 10px;
-  border-radius: var(--radius-sm);
-  border: none;
-  font-family: var(--font-body);
-  transition: transform var(--transition-slow);
+.form_input,
+.form_textarea {
+    width: 300px;
+    padding: 10px;
+    border-radius: var(--radius-sm);
+    border: none;
+    font-family: var(--font-body);
+    transition: transform var(--transition-slow);
 }
 
-.form__input:hover,
-.form__textarea:hover {
-  transform: scale(1.1);
+.form_input:hover,
+.form_textarea:hover {
+    transform: scale(1.1);
 }
 
-.form__textarea {
-  min-height: 100px;
-  resize: vertical;
+.form_textarea {
+    min-height: 100px;
+    resize: vertical;
 }
 
-.form__select {
-  width: 25%;
-  background: var(--color-primary-dark);
-  color: rgb(14, 13, 13);
-  border: 2px solid var(--color-primary-dark);
-  border-radius: var(--radius-md);
-  font-size: 16px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5l6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 15px;
-  cursor: pointer;
+.form_select {
+    width: 300px;
+    padding: 10px;
+    background: var(--color-primary-dark);
+    color: rgb(14, 13, 13);
+    border: 2px solid var(--color-primary-dark);
+    border-radius: var(--radius-md);
+    font-size: 16px;
+    font-family: var(--font-body);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='white' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+    transition: transform var(--transition-slow);
 }
 
-.form__select:hover {
-  border-color: var(--color-primary);
+.form_select:hover {
+    border-color: var(--color-primary);
+    transform: scale(1.05);
 }
 
-.form__select:focus {
-  outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 5px var(--color-primary);
+.form_select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px var(--color-primary);
 }
 
-.form__button {
-  padding: 10px 20px;
-  background: var(--color-primary-dark);
-  color: var(--text-primary);
-  border: none;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  font-family: var(--font-heading);
-  transition: background var(--transition-slow);
+.form_button {
+    padding: 10px 20px;
+    background: var(--color-primary-dark);
+    color: var(--text-primary);
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-family: var(--font-heading);
+    transition: background var(--transition-slow);
 }
 
-.form__button:hover {
-  background: var(--color-primary);
+.form_button:hover {
+    background: var(--color-primary);
 }
 
 /* =====================================================
