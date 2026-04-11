@@ -1,281 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VORTEX MOTORS - Equipe</title>
     <link rel="stylesheet" href="/public/css/styles.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
-      rel="stylesheet">
-
-    <style>
-        img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 16px;
-        }
-
-        .equipe-header {
-            text-align: center;
-            padding: 60px 20px 40px;
-        }
-
-        .equipe-header h1 {
-            font-family: 'Orbitron', sans-serif;
-            font-size: clamp(28px, 5vw, 48px);
-            color: #3fa9ff;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-        }
-
-        .equipe-header p {
-            font-size: 18px;
-            color: #aaaaaa;
-            margin-top: 10px;
-            letter-spacing: 2px;
-        }
-
-        .linha-divisora {
-            width: 80px;
-            height: 3px;
-            background: #3fa9ff;
-            margin: 20px auto 0;
-        }
-        .equipe-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-            padding: 50px 40px 80px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .membro-card {
-            background: #0e1624;
-            border: 1px solid #1e2d42;
-            border-radius: 12px;
-            width: 220px;
-            text-align: center;
-            padding: 30px 20px;
-            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-            animation: fadeUp 0.6s ease both;
-        }
-
-        .membro-card:hover {
-            transform: translateY(-8px);
-            border-color: #3fa9ff;
-            box-shadow: 0 0 20px rgba(63, 169, 255, 0.15);
-        }
-
-        .membro-card:nth-child(1) { animation-delay: 0.1s; }
-        .membro-card:nth-child(2) { animation-delay: 0.2s; }
-        .membro-card:nth-child(3) { animation-delay: 0.3s; }
-        .membro-card:nth-child(4) { animation-delay: 0.4s; }
-        .membro-card:nth-child(5) { animation-delay: 0.5s; }
-        .membro-card:nth-child(6) { animation-delay: 0.6s; }
-
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-        .membro-foto {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #3fa9ff;
-            margin-bottom: 16px;
-        }
-        .membro-nome {
-            font-family: 'Orbitron', sans-serif;
-            font-size: 13px;
-            color: #ffffff;
-            letter-spacing: 1px;
-            margin-bottom: 6px;
-            text-transform: uppercase;
-        }
-        .membro-cargo {
-            font-size: 13px;
-            color: #3fa9ff;
-            margin-bottom: 16px;
-            letter-spacing: 1px;
-        }
-        .membro-instagram {
-            display: inline-block;
-            padding: 8px 18px;
-            background: transparent;
-            color: #3fa9ff;
-            border: 1px solid #3fa9ff;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 13px;
-            font-family: 'Rajdhani', sans-serif;
-            letter-spacing: 1px;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        .membro-instagram:hover {
-            background: #3fa9ff;
-            color: #0a0f1a;
-        }
-        .whatsapp {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 999;
-        }
-
-        .whatsapp img {
-            width: 60px;
-            height: 60px;
-            transition: transform 0.3s;
-        }
-
-        .whatsapp img:hover {
-            transform: scale(1.1);
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-        <!-- HEADER -->
-    <header class="header" role="banner">
-      <div class="header__logo">
-        <a href="/index.html" aria-label="Vortex Motors - Página inicial">
-          <img src="/public/images/LOGO.png" alt="Logo Vortex Motors" width="290" height="auto" />
-        </a>
-      </div>
-
-      <nav class="navbar" role="navigation" aria-label="Menu principal">
-        <div class="navbar__links">
-          <a href="/index.html" class="navbar__link" aria-current="page">Home</a>
-          <a href="/pages/about/sobre.html" class="navbar__link">Sobre</a>
-          <a href="/pages/equipe/equipe.html" class="navbar__link">Equipe</a>
-          <a href="/pages/auth/login.html" class="navbar__link">Login</a>
-          <a href="/pages/contact/contato.html" class="navbar__link">Contato</a>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__logo">
+            <a href="/index.html">
+                <img src="/img/LOGO.png" alt="Vortex Motors Logo">
+            </a>
         </div>
-      </nav>
+        <nav class="navbar">
+            <div class="navbar__links">
+                <a href="/index.html" class="navbar__link">Home</a>
+                <a href="/pages/about/sobre.html" class="navbar__link">Sobre</a>
+                <a href="/pages/equipe/equipe.html" class="navbar__link">Equipe</a>
+                <a href="/pages/auth/login.html" class="navbar__link">Login</a>
+                <a href="/pages/contact/contato.html" class="navbar__link">Contato</a>
+            </div>
+        </nav>
     </header>
 
-    <div class="equipe-header">
-        <h1>Nossa Equipe</h1>
-        <p>Os desenvolvedores por trás da Vortex Motors</p>
-        <div class="linha-divisora"></div>
-    </div>
+    <main id="main-content">
+        <section class="content-section">
+            <h1 class="card__title">NOSSA EQUIPE</h1>
+            <p">Os desenvolvedores por trás da Vortex Motors</p>
+            
+            <div class="team-carousel">
 
-    <div class="equipe-grid">
+                <button class="carousel-arrow left" id="prevBtn">&#10094;</button>
+                
+                <div class="carousel-container">
+                    <div class="carousel-track" id="carouselTrack">
+                        
+                        <div class="card team-card">
+                            <img src="/img/equipe/matheuslevy.jpeg" alt="Matheus Levy" class="card__image">
+                            <h3 class="card__title">MATHEUS LEVY</h3>
+                            <p">Responsável pela documentação</p>
+                            <a href="https://www.instagram.com/arianagrande/" class="card__button">@ Instagram</a>
+                        </div>
 
-        <div class="membro-card">
-            <img
-                src="/img/equipe/matheuslevy.jpeg" alt="Foto do membro" class="membro-foto">
-            <div class="membro-nome">Matheus Levy</div>          
-            <div class="membro-cargo">Responsável pela documentação</div>           
-            <a href="https://www.instagram.com/arianagrande/" class="membro-instagram" target="_blank">
-                @ Instagram                                          
-            </a>
-        </div>
+                        <div class="card team-card">
+                            <img src="/img/equipe/felipediassis.jpg" alt="Felipe Diassis" class="card__image">
+                            <h3 class="card__title">FELIPE DIASSIS</h3>
+                            <p">Responsável pelo desenvolvimento frontend</p>
+                            <a href="https://instagram.com/usuario" class="card__button">@ Instagram</a>
+                        </div>
 
-        <div class="membro-card">
-            <img
-                src="/img/equipe/felipediassis.jpg" alt="Foto do membro" class="membro-foto">
-            <div class="membro-nome">Felipe Diassis</div>          
-            <div class="membro-cargo">Responsável pelo desenvolvimento frontend</div>               
-            <a href="https://instagram.com/usuario" class="membro-instagram" target="_blank">
-                @ Instagram                                          
-            </a>
-        </div>
+                        <div class="card team-card">
+                            <img src="/img/equipe/juliazezilia.jpeg" alt="Julia Zézilia" class="card__image">
+                            <h3 class="card__title">JULIA ZÉZILIA</h3>
+                            <p">Responsável pelo desenvolvimento de banco de dados</p>
+                            <a href="https://instagram.com/usuario" class="card__button">@ Instagram</a>
+                        </div>
 
-        <div class="membro-card">
-            <img
-                src="/img/equipe/juliazezilia.jpeg" alt="Foto do membro" class="membro-foto">
-            <div class="membro-nome">Julia Zézilia</div>          
-            <div class="membro-cargo">Responsável pelo desenvolvimento de banco de dados</div>               
-            <a href="https://instagram.com/usuario" class="membro-instagram" target="_blank">
-                @ Instagram                                          
-            </a>
-        </div>
+                        <div class="card team-card">
+                            <img src="/img/equipe/gabrieloliani.jpeg" alt="Gabriel Oliani" class="card__image">
+                            <h3 class="card__title">GABRIEL OLIANI</h3>
+                            <p">Responsável pelo desenvolvimento de banco de dados</p>
+                            <a href="https://instagram.com/SEU_USUARIO" class="card__button">@SEU_USUARIO</a>
+                        </div>
 
-        <div class="membro-card">
-            <img
-                src="/img/equipe/gabrieloliani.jpeg" alt="Foto do membro" class="membro-foto">
-            <div class="membro-nome">NOME COMPLETO</div>
-            <div class="membro-cargo">CARGO OU FUNÇÃO</div>
-            <a href="https://instagram.com/SEU_USUARIO" class="membro-instagram" target="_blank">
-                @SEU_USUARIO
-            </a>
-        </div>
+                        <div class="card team-card">
+                            <img src="/img/equipe/pedromonteiro.jpeg" alt="Pedro Monteiro" class="card__image">
+                            <h3 class="card__title">PEDRO MONTEIRO</h3>
+                            <p">Responsável pelo desenvolvimento frontend</p>
+                            <a href="https://instagram.com/SEU_USUARIO" class="card__button">@SEU_USUARIO</a>
+                        </div>
 
-        <div class="membro-card">
-            <img
-                src="/img/equipe/pedromonteiro.jpeg" alt="Foto do membro" class="membro-foto">
-            <div class="membro-nome">NOME COMPLETO</div>
-            <div class="membro-cargo">CARGO OU FUNÇÃO</div>
-            <a href="https://instagram.com/SEU_USUARIO" class="membro-instagram" target="_blank">
-                @SEU_USUARIO
-            </a>
-        </div>
+                        <div class="card team-card">
+                            <img src="/img/equipe/joaovictor.jpeg" alt="João Victor" class="card__image">
+                            <h3 class="card__title">JOÃO VICTOR</h3>
+                            <p">Responsável pelo desenvolvimento backend</p>
+                            <a href="https://instagram.com/SEU_USUARIO" class="card__button">@SEU_USUARIO</a>
+                        </div>
 
-        <div class="membro-card">
-            <img
-                src="/img/equipe/joaovictor.jpeg" alt="Foto do membro" class="membro-foto">
-            <div class="membro-nome">NOME COMPLETO</div>
-            <div class="membro-cargo">CARGO OU FUNÇÃO</div>
-            <a href="https://instagram.com/SEU_USUARIO" class="membro-instagram" target="_blank">
-                @SEU_USUARIO
-            </a>
-        </div>
+                        <div class="card team-card">
+                            <img src="/img/equipe/marcelofloriano.jpeg" alt="Marcelo Floriano" class="card__image">
+                            <h3 class="card__title">MARCELO FLORIANO</h3>
+                            <p">Responsável pelo desenvolvimento frontend</p>
+                            <a href="https://instagram.com/SEU_USUARIO" class="card__button">@SEU_USUARIO</a>
+                        </div>
 
-        <div class="membro-card">
-            <img
-                src="/img/equipe/marcelofloriano.jpeg" alt="Foto do membro" class="membro-foto">
-            <div class="membro-nome">NOME COMPLETO</div>
-            <div class="membro-cargo">CARGO OU FUNÇÃO</div>
-            <a href="https://instagram.com/SEU_USUARIO" class="membro-instagram" target="_blank">
-                @SEU_USUARIO
-            </a>
-        </div>
+                        <div class="card team-card">
+                            <img src="/img/equipe/matheusluca.jpeg" alt="Matheus Luca" class="card__image">
+                            <h3 class="card__title">MATHEUS LUCA</h3>
+                            <p">Responsável pelo desenvolvimento frontend</p>
+                            <a href="https://instagram.com/SEU_USUARIO" class="card__button">@SEU_USUARIO</a>
+                        </div>
 
-        <div class="membro-card">
-            <img
-                src="/img/equipe/nome-dafoto.jpg" alt="Foto do membro" class="membro-foto">
-            <div class="membro-nome">NOME COMPLETO</div>
-            <div class="membro-cargo">CARGO OU FUNÇÃO</div>
-            <a href="https://instagram.com/SEU_USUARIO" class="membro-instagram" target="_blank">
-                @SEU_USUARIO
-            </a>
-        </div>
+                        <div class="card team-card">
+                            <img src="/img/equipe/renanvitor.jpeg" alt="Renan Vitor" class="card__image">
+                            <h3 class="card__title">RENAN VITOR</h3>
+                            <p">Responsável pelo desenvolvimento frontend</p>
+                            <a href="https://instagram.com/SEU_USUARIO" class="card__button">@SEU_USUARIO</a>
+                        </div>
 
-        <div class="membro-card">
-            <img
-                src="/img/equipe/nome-dafoto.jpg" alt="Foto do membro" class="membro-foto">
-            <div class="membro-nome">NOME COMPLETO</div>
-            <div class="membro-cargo">CARGO OU FUNÇÃO</div>
-            <a href="https://instagram.com/SEU_USUARIO" class="membro-instagram" target="_blank">
-                @SEU_USUARIO
-            </a>
-        </div>
-        
-        <!--
-        <div class="membro-card">
-            <img
-                src="/img/equipe/nome-dafoto.jpg" alt="Foto do membro" class="membro-foto">
-            <div class="membro-nome">NOME COMPLETO</div>
-            <div class="membro-cargo">CARGO OU FUNÇÃO</div>
-            <a href="https://instagram.com/SEU_USUARIO" class="membro-instagram" target="_blank">
-                @SEU_USUARIO
-            </a>
-        </div>
-        -->
+                    </div>
+                </div>
+                
+                <button class="carousel-arrow right" id="nextBtn">&#10095;</button>
+            </div>
+            
+            <div class="carousel-dots" id="carouselDots"></div>
+        </section>
+    </main>
 
-    </div>
-
-    <a href="https://wa.me/5511984039699" class="whatsapp" target="_blank">
-        <img src="/img/whatsapp.png" alt="WhatsApp"/>
+    <a href="https://wa.me/5511984039699" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Fale conosco pelo WhatsApp">
+        <img src="/img/whatsapp.png" alt="WhatsApp" class="whatsapp-float__icon">
     </a>
 
+    <script src="/public/js/team-carousel.js"></script>
 </body>
 </html>
